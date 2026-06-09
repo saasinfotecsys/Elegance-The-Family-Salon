@@ -193,12 +193,12 @@ img {
     top: 0;
     width: 100%;
     z-index: 999;
-    padding: 20px 0;
+    padding: 15px 0;
     transition: var(--transition);
 }
 
 #navbar.scrolled {
-    padding: 15px 0;
+    padding: 10px 0;
     background-color: rgba(13, 10, 11, 0.95);
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 20px rgba(0,0,0,0.5);
@@ -213,28 +213,27 @@ img {
     align-items: center;
 }
 
-.logo {
+.nav-container .logo {
     display: flex;
-    flex-direction: column;
-    line-height: 1;
+    align-items: center;
 }
 
-.logo-text {
-    font-family: var(--font-heading);
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--gold-primary);
-    background: var(--gold-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.nav-container .site-logo {
+    max-height: 100px;
+    width: auto;
+    display: block;
 }
 
-.logo-subtext {
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: var(--white);
-    margin-top: 5px;
+.footer-brand .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.footer-brand .site-logo {
+    max-height: 130px;
+    width: auto;
+    display: block;
 }
 
 .nav-links a {
